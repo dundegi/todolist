@@ -1,0 +1,18 @@
+spring:
+  datasoure:
+    url: jtbc:h2:tcp://localhost/~/todolist;MVCC=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        #        show_sql: true systemout 에 찍는다. 그래서 운영측면에서는 logging을 써야한다.
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
