@@ -20,8 +20,10 @@ class TodolistApplicationTests {
 		todo1.setCompleted(Boolean.TRUE);
 		this.toDoRepository.save(todo1);
 
-		System.out.println("todo1 = " + todo1.getId());
-		System.out.println("todo1.getContent() = " + todo1.getContent());
+		toDoList todo2 = new toDoList();
+		todo2.setContent("hihi");
+		todo2.setCompleted(Boolean.FALSE);
+		this.toDoRepository.save(todo2);
 		
 	}
 }

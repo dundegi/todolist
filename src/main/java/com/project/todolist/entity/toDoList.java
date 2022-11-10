@@ -12,6 +12,9 @@ public class toDoList {
     @Id @GeneratedValue
     private Long id;
 
+    @Column
+    private String title;
+
     @Column(length = 200)
     private String content;
 

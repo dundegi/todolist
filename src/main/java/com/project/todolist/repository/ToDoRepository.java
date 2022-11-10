@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface ToDoRepository extends JpaRepository<toDoList, Long> {
 
 
+
 }
